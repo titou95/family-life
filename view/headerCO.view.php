@@ -1,0 +1,103 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<link rel="stylesheet" href="../view/design.css" />
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js" /></script>
+	<link rel="icon" type="image/png" href="../img/icon.png" />
+	<meta name="Rating" content="general">
+	<title>Welcome to family life</title>
+</head>
+<div class='home'>
+<body>
+<header>
+			<div class='banner'>family life</div>
+			<hr size ='2' color='#969090'/>
+</header>
+</div>
+<table border ='0'  class='tab' cellpadding='70' id="slideMenu">
+<tr>
+	<td >
+		<img src ='../img/bouton_agenda.png'/>
+	</td>
+	<td>
+		<img src ='../img/bouton_agenda.png'/>
+	</td>
+	<td >
+		<img src ='../img/bouton_agenda.png'/>
+	</td>
+</tr>
+<tr>
+	<td >
+		<img src ='../img/bouton_agenda.png'/>
+	</td>
+	<td >
+		<img src ='../img/bouton_agenda.png'/>
+	</td>
+	<td >
+		<img src ='../img/bouton_agenda.png'/>
+	</td>
+</tr> 
+<tr>
+	<td >
+		<img src ='../img/bouton_agenda.png'/>
+	</td>
+	<td >
+		<img src ='../img/bouton_agenda.png'/>
+	</td>
+	<td >
+		<img src ='../img/bouton_agenda.png'/>
+	</td>
+</tr>
+</table>
+
+</div>
+<script type="text/javascript">
+
+/*
+* DOMElementToShow: Element du DOM a afficher
+* DOMElementOpen : Element du DOM qui s'occupera de lancer l'animation qui affichera DOMElementToShow 
+* DOMElementClose : Element du DOM qui s'occupera de lancer l'animation qui fermera DOMElementToShow
+* duration : La durée de l'animation d'ouverture et fermeture
+*/
+function initlializeSlideMenuAnimation( DOMElementOpen, DOMElementClose, DOMElementToShow, duration ) {
+
+	var DOMElementToShowHeight = DOMElementToShow.css("height");
+	
+	// On définit quoi faire, lorsque l'element recoit un evenement
+ 	DOMElementOpen.bind({ 
+		// Ici lors du survole de la souris sur l'element
+		mouseover : function() {
+			// On lance l'animation d'affichage
+			DOMElementToShow.css("height", "0px");
+			DOMElementToShow.css("display", "block");
+			DOMElementToShow.animate({
+				height: '+='+DOMElementToShowHeight
+			}, duration, function() {
+				// one equivaut à un bind unique, soit a un bind/unbind, pour empecher une propagation apocalyptique de l'evenement, hell yeeah
+				DOMElementClose.one({
+					// mouseleave, m'voyez ?
+					mouseleave : function() {
+						// On lance l'animation de fermeture
+						DOMElementToShow.animate({
+							height: '-='+DOMElementToShowHeight
+						}, duration, function() {
+							DOMElementToShow.css("display", "none");
+							DOMElementToShow.css("height", DOMElementToShowHeight+"px");
+						});
+					}
+				});
+					
+			});
+		}
+	});
+	// And that's all guys !
+}
+
+(function() {
+	initlializeSlideMenuAnimation( $(".banner"), $("#slideMenu"), $("#slideMenu"), 500 );
+})();
+
+</script>
+</body>
+</html>

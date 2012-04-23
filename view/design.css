@@ -1,0 +1,363 @@
+﻿/*
+
+Design général 
+
+*/
+body {
+	width:1024px;
+	margin:auto;
+    background: -moz-linear-gradient(90deg, Scrollbar, #FFFFFF) no-repeat scroll 0 0 transparent;
+	background:-webkit-linear-gradient(90deg, Scrollbar, #FFFFFF) no-repeat scroll 0 0 transparent;
+	background:-o-linear-gradient(90deg, Scrollbar, #FFFFFF) no-repeat scroll 0 0 transparent;
+    font-family: Verdana;
+    text-shadow: 1 5px 0 #FFFFFF;
+	 border: 2px solid #AAAAAA;
+    border-radius: 20px 20px 20px 20px;
+    box-shadow: 0 0 40px #AAAAAA;
+}
+#footer{
+text-align:center;
+margin-bottom: 10px;
+}
+
+/*
+
+Design page home.view.php
+
+*/
+.home .height{
+	min-height:768px;
+}
+.home .tab
+{
+vertical-align: center;
+margin-left : auto;
+margin-right : auto;
+}
+
+.home  .banner {
+
+font-family : Verdana ;
+font-weight : 72 ;
+font-style : normal;
+color : #969090;
+font-size : 600%;
+text-align : center ;
+}
+
+.home .text
+{
+margin-top:10px;
+font-family : Verdana ;
+font-weight : 18 ;
+font-style : normal;
+color : #000000;
+font-size : 150%;
+}
+.home .button {
+	margin-top : 0px;
+	margin-left : 10px;
+	border-left:1px solid #969090;
+	border-right:1px solid #969090;	
+	border-top: 1px solid #969090;
+	background: #969090;
+	background: -webkit-gradient(linear, left top, left bottom, from(#969090), to(#65727a));
+	background: -webkit-linear-gradient(top, #969090, #65727a);
+	background: -moz-linear-gradient(top, #969090, #65727a);
+	background: -ms-linear-gradient(top, #969090, #65727a);
+	background: -o-linear-gradient(top, #969090, #65727a);
+	padding: 4.5px 9px;
+	-webkit-border-radius: 8px 8px 8px 8px;
+	-moz-border-radius: 8px 8px 8px 8px;
+	border-radius: 8px 8px 8px 8px;
+	-webkit-box-shadow: rgba(0,0,0,1) 0 1px 0;
+	-moz-box-shadow: rgba(0,0,0,1) 0 1px 0;
+	box-shadow: rgba(0,0,0,1) 0 1px 0;
+	text-shadow: rgba(0,0,0,.4) 0 1px 0;
+	color: #f5edf5;
+	font-size: 16px;
+	font-family: verdana, serif;
+	text-decoration: none;
+	vertical-align: middle;
+}
+.home .button:hover {
+	border-top-color: #36444d;
+	background: #36444d;
+	color: #ccc;
+}
+.home .button:active {
+	border-top-color: #969090;
+	background: #969090;
+}
+.home input[type="text"], input[type="password"], input[type="email"] {
+    background: -moz-linear-gradient(90deg, #FFFFFF, #EEEEEE) repeat scroll 0 0 transparent;
+    border: 1px solid #AAAAAA;
+    padding: 5px;
+}
+.home input[type="text"]:focus, input[type="password"]:focus {
+    border-color: #093C75;
+    box-shadow: 0 0 3px #0459B7;
+    outline: medium none;
+}
+.home .mdp{
+	margin-left:875px;
+}
+.home .mdpT{
+	color: black;
+	font-family : Verdana ;
+	font-style : italic;
+	font-size: small;
+}
+
+/*
+
+Design form.view.php
+
+*/
+
+.inscription .height{
+	min-height:768px;
+}
+.inscription a {
+    color: #333333;
+    text-decoration: underline;
+}
+.inscription form {
+    background: -moz-linear-gradient(90deg, Scrollbar, #FFFFFF) repeat scroll 0 0 transparent;
+    border: 3px solid #AAAAAA;
+    border-radius: 20px 20px 20px 20px;
+    box-shadow: 0 0 40px #AAAAAA;
+	margin:80px auto 0;
+    padding: 45px;
+    width: 650px;
+}
+.inscription h1 {
+    font-size: 20px;
+    font-weight: bolder;
+    letter-spacing: 5px;
+    margin-bottom: 22px;
+    text-transform: uppercase;
+	text-align:center;
+	}
+.inscription form p {
+    margin-bottom: 20px;
+}
+
+.inscription label {
+    cursor: pointer;
+    display: block;
+    float: left;
+    font-size: 16px;
+    font-weight: inherit;
+    line-height: 28px;
+    margin-bottom: 8px;
+    width: 333px;
+}
+.inscription form p:hover label {
+    color: Highlight;
+}
+
+.inscription input[type="text"], input[type="password"], input[type="email"] {
+    background: -moz-linear-gradient(90deg, #FFFFFF, #EEEEEE) repeat scroll 0 0 transparent;
+    border: 1px solid #AAAAAA;
+    padding: 5px;
+}
+.inscription input[type="text"]:focus, input[type="password"]:focus {
+    border-color: #093C75;
+    box-shadow: 0 0 3px #0459B7;
+    outline: medium none;
+}
+.inscription select {
+    box-shadow: 0 0 3px #AAAAAA;
+    cursor: pointer;
+    padding: 3px;
+}
+.inscription select:active, select:focus {
+    border: 1px solid #093C75;
+    box-shadow: 0 0 3px #0459B7;
+    outline: medium none;
+}
+
+.inscription .button {
+	margin-top : 0px;
+	margin-left : 276px;
+	border-left:1px solid #969090;
+	border-right:1px solid #969090;	
+	border-top: 1px solid #969090;
+	background: #969090;
+	background: -webkit-gradient(linear, left top, left bottom, from(#969090), to(#65727a));
+	background: -webkit-linear-gradient(top, #969090, #65727a);
+	background: -moz-linear-gradient(top, #969090, #65727a);
+	background: -ms-linear-gradient(top, #969090, #65727a);
+	background: -o-linear-gradient(top, #969090, #65727a);
+	padding: 4.5px 9px;
+	-webkit-border-radius: 8px 8px 8px 8px;
+	-moz-border-radius: 8px 8px 8px 8px;
+	border-radius: 8px 8px 8px 8px;
+	-webkit-box-shadow: rgba(0,0,0,1) 0 1px 0;
+	-moz-box-shadow: rgba(0,0,0,1) 0 1px 0;
+	box-shadow: rgba(0,0,0,1) 0 1px 0;
+	text-shadow: rgba(0,0,0,.4) 0 2px 0;
+	color: #f5edf5;
+	font-size: 20px;
+	font-family: verdana, serif;
+	text-decoration: none;
+	vertical-align: middle;
+}
+.inscription .button:hover {
+	border-top-color: #36444d;
+	background: #36444d;
+	color: #ccc;
+}
+.inscription .button:active {
+	border-top-color: #969090;
+	background: #969090;
+}
+/*
+
+	Design page main.view.php
+
+*/
+.main .title{
+	text-align:center;
+	font-size: x-big;
+}
+
+/* 
+	Design page forget_password.view.php
+	
+*/
+.forget_password .height{
+	min-height:768px;
+}
+.forget_password a {
+    color: #333333;
+    text-decoration: underline;
+}
+
+.forget_password form {
+    background: -moz-linear-gradient(90deg, Scrollbar, #FFFFFF) repeat scroll 0 0 transparent;
+    border: 3px solid #AAAAAA;
+    border-radius: 20px 20px 20px 20px;
+    box-shadow: 0 0 40px #AAAAAA;
+	margin:80px auto 0;
+    padding: 45px;
+    width: 650px;
+}
+
+.forget_password label {
+    cursor: pointer;
+    display: block;
+    float: left;
+    font-size: 16px;
+    font-weight: inherit;
+    line-height: 28px;
+    margin-bottom: 8px;
+    width: 333px;
+}
+	
+.forget_password form p {
+    margin-bottom: 20px;
+}
+
+.forget_password .button {
+	margin-top : 0px;
+	margin-left : 276px;
+	border-left:1px solid #969090;
+	border-right:1px solid #969090;	
+	border-top: 1px solid #969090;
+	background: #969090;
+	background: -webkit-gradient(linear, left top, left bottom, from(#969090), to(#65727a));
+	background: -webkit-linear-gradient(top, #969090, #65727a);
+	background: -moz-linear-gradient(top, #969090, #65727a);
+	background: -ms-linear-gradient(top, #969090, #65727a);
+	background: -o-linear-gradient(top, #969090, #65727a);
+	padding: 4.5px 9px;
+	-webkit-border-radius: 8px 8px 8px 8px;
+	-moz-border-radius: 8px 8px 8px 8px;
+	border-radius: 8px 8px 8px 8px;
+	-webkit-box-shadow: rgba(0,0,0,1) 0 1px 0;
+	-moz-box-shadow: rgba(0,0,0,1) 0 1px 0;
+	box-shadow: rgba(0,0,0,1) 0 1px 0;
+	text-shadow: rgba(0,0,0,.4) 0 2px 0;
+	color: #f5edf5;
+	font-size: 20px;
+	font-family: verdana, serif;
+	text-decoration: none;
+	vertical-align: middle;
+}
+.forget_password .button:hover {
+	border-top-color: #36444d;
+	background: #36444d;
+	color: #ccc;
+}
+.forget_password .button:active {
+	border-top-color: #969090;
+	background: #969090;
+}
+
+/*
+
+	design page checkMin.view.php et checkMaj.view.php
+
+*/
+.check .button {
+	margin-top : 0px;
+	margin-left : 10px;
+	border-left:1px solid #969090;
+	border-right:1px solid #969090;	
+	border-top: 1px solid #969090;
+	background: #969090;
+	background: -webkit-gradient(linear, left top, left bottom, from(#969090), to(#65727a));
+	background: -webkit-linear-gradient(top, #969090, #65727a);
+	background: -moz-linear-gradient(top, #969090, #65727a);
+	background: -ms-linear-gradient(top, #969090, #65727a);
+	background: -o-linear-gradient(top, #969090, #65727a);
+	padding: 4.5px 9px;
+	-webkit-border-radius: 8px 8px 8px 8px;
+	-moz-border-radius: 8px 8px 8px 8px;
+	border-radius: 8px 8px 8px 8px;
+	-webkit-box-shadow: rgba(0,0,0,1) 0 1px 0;
+	-moz-box-shadow: rgba(0,0,0,1) 0 1px 0;
+	box-shadow: rgba(0,0,0,1) 0 1px 0;
+	text-shadow: rgba(0,0,0,.4) 0 1px 0;
+	color: #f5edf5;
+	font-size: 16px;
+	font-family: verdana, serif;
+	text-decoration: none;
+	vertical-align: middle;
+}
+.check .button:hover {
+	border-top-color: #36444d;
+	background: #36444d;
+	color: #ccc;
+}
+.check .button:active {
+	border-top-color: #969090;
+	background: #969090;
+}
+.check input[type="text"], input[type="password"], input[type="email"] {
+    background: -moz-linear-gradient(90deg, #FFFFFF, #EEEEEE) repeat scroll 0 0 transparent;
+    border: 1px solid #AAAAAA;
+    padding: 5px;
+}
+.check input[type="text"]:focus, input[type="password"]:focus {
+    border-color: #093C75;
+    box-shadow: 0 0 3px #0459B7;
+    outline: medium none;
+}
+.check .height{
+	min-height:768px;
+}
+.check .text{
+	font-family : Verdana ;
+	text-align: center;
+}
+.check .form {
+	margin-left:383px;
+	margin-top:50px;
+}
+.check .form2 {
+	margin-left:443px;
+	margin-top:50px;
+}

@@ -1,0 +1,107 @@
+body {
+	width:1024px;
+	height: 768 px;
+	margin:auto;
+    background: ThreeDLightShadow;
+    color: #222222;
+    font-family: Verdana;
+    font-size: 15px;
+    font-weight: bold;
+    line-height: 45px;
+    text-shadow: 1 5px 0 #FFFFFF;
+}
+
+.inscription a {
+    color: #333333;
+    text-decoration: underline;
+}
+.inscription form {
+    background: -moz-linear-gradient(90deg, Scrollbar, #FFFFFF) repeat scroll 0 0 transparent;
+    border: 3px solid #AAAAAA;
+    border-radius: 20px 20px 20px 20px;
+    box-shadow: 0 0 40px #AAAAAA;
+	margin:80px auto 0;
+    padding: 45px;
+    width: 650px;
+}
+.inscription h1 {
+    font-size: 20px;
+    font-weight: bolder;
+    letter-spacing: 5px;
+    margin-bottom: 22px;
+    text-transform: uppercase;
+	text-align:center;
+	}
+.inscription form p {
+    margin-bottom: 20px;
+}
+
+.inscription label {
+    cursor: pointer;
+    display: block;
+    float: left;
+    font-size: 16px;
+    font-weight: inherit;
+    line-height: 28px;
+    margin-bottom: 8px;
+    width: 333px;
+}
+.inscription form p:hover label {
+    color: Highlight;
+}
+
+.inscription input[type="text"], input[type="password"], input[type="email"] {
+    background: -moz-linear-gradient(90deg, #FFFFFF, #EEEEEE) repeat scroll 0 0 transparent;
+    border: 1px solid #AAAAAA;
+    padding: 5px;
+}
+.inscription input[type="text"]:focus, input[type="password"]:focus {
+    border-color: #093C75;
+    box-shadow: 0 0 3px #0459B7;
+    outline: medium none;
+}
+.inscription select {
+    box-shadow: 0 0 3px #AAAAAA;
+    cursor: pointer;
+    padding: 3px;
+}
+.inscription select:active, select:focus {
+    border: 1px solid #093C75;
+    box-shadow: 0 0 3px #0459B7;
+    outline: medium none;
+}
+
+.inscription .button {
+	margin-top : 0px;
+	margin-left : 276px;
+	border-left:1px solid #969090;
+	border-right:1px solid #969090;	
+	border-top: 1px solid #969090;
+	background: #969090;
+	background: -webkit-gradient(linear, left top, left bottom, from(#969090), to(#65727a));
+	background: -webkit-linear-gradient(top, #969090, #65727a);
+	background: -moz-linear-gradient(top, #969090, #65727a);
+	background: -ms-linear-gradient(top, #969090, #65727a);
+	background: -o-linear-gradient(top, #969090, #65727a);
+	padding: 4.5px 9px;
+	-webkit-border-radius: 8px 8px 8px 8px;
+	-moz-border-radius: 8px 8px 8px 8px;
+	border-radius: 8px 8px 8px 8px;
+	-webkit-box-shadow: rgba(0,0,0,1) 0 1px 0;
+	-moz-box-shadow: rgba(0,0,0,1) 0 1px 0;
+	box-shadow: rgba(0,0,0,1) 0 1px 0;
+	text-shadow: rgba(0,0,0,.4) 0 2px 0;
+	color: #f5edf5;
+	font-size: 20px;
+	font-family: verdana, serif;
+	text-decoration: none;
+	vertical-align: middle;
+}
+.inscription .button:hover {
+	border-top-color: #36444d;
+	background: #36444d;
+	color: #ccc;
+}
+.inscription .button:active {
+	border-top-color: #969090;
+	background: #969090;

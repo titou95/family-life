@@ -1,0 +1,37 @@
+<NotepadPlus>
+    <Project name="Family-life">
+        <Folder name="model">
+            <File name="model\registered.class.php" />
+            <File name="model\registeredmanager.class.php" />
+            <File name="model\PDOFactory.class.php" />
+            <File name="model\includeAll.func.php" />
+            <File name="model\HTTPRequest.class.php" />
+            <File name="model\HTTPResponse.class.php" />
+            <File name="model\notice.class.php" />
+            <File name="model\noticemanager.class.php" />
+        </Folder>
+        <Folder name="view">
+            <File name="view\form.css" />
+            <File name="view\design.css" />
+            <File name="view\home.view.php" />
+            <File name="view\header.view.php" />
+            <File name="view\forget_password.view.php" />
+            <File name="view\formRegister.view.php" />
+            <File name="view\main.view.php" />
+            <File name="view\footer.view.php" />
+            <File name="view\header.view.php" />
+            <File name="view\checkMin.view.php" />
+            <File name="view\checkMaj.view.php" />
+        </Folder>
+        <Folder name="controler">
+            <File name="controler\MainControler.php" />
+            <File name="controler\RegisterControler.php" />
+            <File name="controler\ConnexionControler.php" />
+            <File name="controler\SendMailControler.php" />
+            <File name="C:\wamp\www\src\controler\Forget_passwordControler.php" />
+        </Folder>
+        <Folder name="img">
+            <File name="img\icon.png" />
+        </Folder>
+    </Project>
+</NotepadPlus>

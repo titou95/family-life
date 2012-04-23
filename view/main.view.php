@@ -1,0 +1,9 @@
+﻿<div class='main'>
+// NOTIF
+<hr size ='2' color='#969090'/>
+<div class='height'><div class='title'>Bienvenue sur Family Life, LE site de gestion de famille ! </div><br/>
+Ce site vous propose de nombreux services permettant de gérer et d'organiser votre foyer familial au quotidien. <br/>
+Vous souhaitez gérer votre emploi du temps personnel comme professionnel ? L'application Agenda est faite pour vous ! <br/>
+Ayez un accès aux résultats de vos enfants et suivez leur progression grâce à l'application Résultats. <br/>
+D'autres applications comme le gestionnaire de budget ou la liste de courses sont disponibles, inscrivez-vous pour les découvrir ! <br/>
+</div></div>

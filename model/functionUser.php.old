@@ -1,0 +1,44 @@
+﻿<?php
+function connectUsers($pseudo='',$password=''){
+
+	try{
+		// Connection à MySQL
+		$pdo_options[PDO::ATTR_ERRMODE] = PDO::ERRMODE_EXCEPTION;
+		$database = new PDO('mysql:host=localhost;dbname=test', 'root', '', $pdo_options);
+		
+		//preparation et execution de la requete SQL
+		$req = $database->prepare('SELECT * FROM REGISTEREDS
+								WHERE pseudo = :pseudo AND password = :password');
+		$req->execute(array(
+			'pseudo'=>$pseudo,
+			'password'=>$password));
+
+		//entrer des données reçues dans un tableau
+		$data = $req->fetchAll();
+			
+		//debug du tableau $data
+		// echo var_dump($data);
+		
+	}
+	catch(Exception $e){
+		// En cas d'erreur précédemment, on affiche un message et on arrête tout
+		die('Erreur : '.$e->getMessage());
+	}
+
+	if (isset($data[0]["pseudo"])){ //verification de l'existance du pseudo en base de données
+
+		//controler que le mot de passe soit valide
+		if (isset($data[0]["password"]) AND isset($password) AND hash("sha256", $password) === $data[0]["password"]){
+			$_SESSION["pseudo"] = $data[0]["pseudo"];
+			return 'Vous avez été connecté avec succès';
+		}
+		else{
+			return 'Le mot de passe entré est "invalide"';
+		}
+
+	}
+	else{
+		return 'Le pseudo entré est "invalide"';
+	}
+}
+?>
